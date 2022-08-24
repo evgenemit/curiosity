@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+
+	<div class="wrapper_header">
+		<div class="container header">
+			<div class="col-12 text-white text-center">
+				<h1 class="fw-bold">Марсоход Curiosity</h1>
+				<p>Cнимки Марса сделанные Curiosity.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container content">
+
+		<div class="row px-5 pt-4">
+			<div class="col-6 text-center">
+				<h4>Дата</h4>
+				<input type="date" class="form-control" value="2018-06-05" id="date">
+			</div>
+			<div class="col-6 text-center">
+				<h4>Камера</h4>
+				<select type="text" class="form-select" id="camera">
+					<option selected>Все</option>
+					<option value="FHAZ">FHAZ</option>
+					<option value="RHAZ">RHAZ</option>
+					<option value="MAST">MAST</option>
+					<option value="CHEMCAM">CHEMCAM</option>
+					<option value="MAHLI">MAHLI</option>
+					<option value="MARDI">MARDI</option>
+					<option value="NAVCAM">NAVCAM</option>
+					<option value="PANCAM">PANCAM</option>
+					<option value="MINITES">MINITES</option>
+				</select>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-12 text-center">
+				<button class="btn fw-bold px-4" id="find">Найти снимки</button>
+			</div>
+		</div>
+
+		<div id="result" class="pt-3 text-center">
+			<div class="row">
+				<div class="col-1"><button id="left" style="visibility: hidden"></button></div>
+				<div id="result-img" class="col-10 text-center">
+
+				</div>
+				<div class="col-1"><button id="right" style="visibility: hidden"></button></div>
+			</div>
+			<div class="row mt-3" style="display: none" id="this-all">
+				<div class="col-12 text-center">
+					<p class="fs-5"><span id="this-img"></span> / <span id="all-img"></span></p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/home.js"></script>
+
+
+
+</body>
+</html>
